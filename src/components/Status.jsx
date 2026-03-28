@@ -4,7 +4,13 @@ function Status(props) {
   return (
     <div>
 
-<h1>{props.test('should first', () => { second })}</h1>
+{props.test ? 
+
+<h1>Online</h1> :
+<h1>Offline</h1>
+
+
+}
 
 
     </div>

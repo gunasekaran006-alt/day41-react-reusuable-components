@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Login from './components/Login'
 import Message from './components/Message'
 import Profile from './components/Profile'
+import Status from './components/Status'
 
 
 function App() {
@@ -28,6 +29,7 @@ const user2 = {
 <Message/>
 <Profile userData = {user1} />
 <Profile userData = {user2} />
+<Status test = {false}/>
 
 
 
