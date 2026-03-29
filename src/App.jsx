@@ -22,6 +22,7 @@ const user2 = {
 }
 
 
+
   return (
     <div>
 
@@ -34,6 +35,7 @@ const user2 = {
 
 
 <Login user = {user1}/>
+
 
 
     </div>
