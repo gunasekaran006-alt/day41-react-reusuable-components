@@ -1,16 +1,29 @@
-# React + Vite
+# React User Dashboard & Messaging UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, modular React application that displays user profiles, login statuses, and interactive messaging components. This project focuses on understanding how to pass data between components using **Props** and handling **Conditional Rendering**.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Dynamic Profiles:** Displays multiple user profiles (Name, Email, Status) using a reusable `Profile` component.
+- **Conditional Rendering:** 
+  - Shows "Online/Offline" status based on boolean values.
+  - Displays user info or a "Please Login" message depending on the authentication state.
+- **Reusable Components:** Features a custom `Button` component used across different sections like Header and Messages.
+- **Prop Management:** Demonstrates passing objects and functions as props to child components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies Used
+- **React.js** (Functional Components)
+- **CSS** (Inline styling)
+- **JavaScript (ES6+)**
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+```text
+src/
+├── components/
+│   ├── Button.js    # Reusable button with custom logic/styles
+│   ├── Header.js    # Top section with a welcome message
+│   ├── Login.js     # Conditional login view
+│   ├── Message.js   # Content area with action buttons
+│   ├── Profile.js   # Displays individual user data
+│   └── Status.js    # Visual indicator for online/offline status
+├── App.js           # Main container & data management
+└── index.js         # Entry point
